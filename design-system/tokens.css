@@ -1,0 +1,53 @@
+/**
+ * KodNest Premium Build System — Design Tokens
+ * Calm, Intentional, Coherent, Confident
+ * Maximum 4 colors. No gradients, no glassmorphism.
+ */
+
+:root {
+  /* Colors — Strict palette */
+  --color-bg: #F7F6F3;
+  --color-bg-elevated: #FFFFFF;
+  --color-text: #111111;
+  --color-text-muted: #5A5A5A;
+  --color-accent: #8B0000;
+  --color-accent-hover: #6D0000;
+  --color-success: #4A7C59;
+  --color-warning: #B8860B;
+  --color-border: #E5E4E0;
+  --color-border-focus: #8B0000;
+
+  /* Typography — Serif headings, sans-serif body */
+  --font-heading: "Libre Baskerville", "Georgia", "Times New Roman", serif;
+  --font-body: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+
+  --text-headline: 2rem;
+  --text-headline-line: 1.2;
+  --text-subhead: 1.25rem;
+  --text-body: 1rem;
+  --text-body-large: 1.125rem;
+  --text-small: 0.875rem;
+  --text-caption: 0.8125rem;
+
+  --line-height-body: 1.6;
+  --line-height-relaxed: 1.8;
+  --measure: 720px;
+
+  /* Spacing — Strict 8px scale */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 40px;
+  --space-5: 64px;
+
+  /* Radii — Consistent */
+  --radius: 4px;
+  --radius-button: 4px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 200ms ease-in-out;
+
+  /* Shadows — Subtle only */
+  --shadow-none: none;
+}

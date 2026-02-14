@@ -1,0 +1,127 @@
+/**
+ * KodNest Premium Build System — Global Layout Structure
+ * [Top Bar] → [Context Header] → [Primary Workspace + Secondary Panel] → [Proof Footer]
+ */
+
+/* App shell */
+.kodnest-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Bar */
+.kodnest-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-bg-elevated);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.kodnest-topbar__project {
+  font-family: var(--font-heading);
+  font-size: var(--text-subhead);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.kodnest-topbar__progress {
+  font-size: var(--text-small);
+  color: var(--color-text-muted);
+}
+
+.kodnest-topbar__status {
+  padding: var(--space-1) var(--space-2);
+  font-size: var(--text-caption);
+  font-weight: 500;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg);
+}
+
+.kodnest-topbar__status--shipped { border-color: var(--color-success); color: var(--color-success); }
+.kodnest-topbar__status--in-progress { border-color: var(--color-accent); color: var(--color-accent); }
+
+/* Context Header */
+.kodnest-context {
+  padding: var(--space-4) var(--space-4) var(--space-3);
+}
+
+.kodnest-context__headline {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline);
+  line-height: var(--text-headline-line);
+  margin: 0 0 var(--space-1);
+  letter-spacing: 0.01em;
+}
+
+.kodnest-context__subtext {
+  font-size: var(--text-body);
+  color: var(--color-text-muted);
+  margin: 0;
+  max-width: var(--measure);
+}
+
+/* Main content area — 70/30 split */
+.kodnest-main {
+  flex: 1;
+  display: flex;
+  gap: var(--space-4);
+  padding: 0 var(--space-4) var(--space-4);
+}
+
+/* Primary Workspace — 70% */
+.kodnest-workspace {
+  flex: 0 0 70%;
+  min-width: 0;
+}
+
+/* Secondary Panel — 30% */
+.kodnest-panel {
+  flex: 0 0 30%;
+  min-width: 280px;
+}
+
+/* Proof Footer — Persistent bottom section */
+.kodnest-footer {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-bg-elevated);
+  border-top: 1px solid var(--color-border);
+}
+
+.kodnest-footer__checklist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.kodnest-footer__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-small);
+  color: var(--color-text-muted);
+}
+
+.kodnest-footer__checkbox {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg);
+  cursor: pointer;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.kodnest-footer__checkbox:focus {
+  outline: none;
+  border-color: var(--color-border-focus);
+}
+
+.kodnest-footer__checkbox--checked {
+  background: var(--color-success);
+  border-color: var(--color-success);
+}

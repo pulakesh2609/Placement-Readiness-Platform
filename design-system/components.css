@@ -1,0 +1,219 @@
+/**
+ * KodNest Premium Build System — Components
+ * Same hover effect and border radius everywhere. Clean, predictable.
+ */
+
+/* Primary Button */
+.kodnest-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  font-weight: 500;
+  line-height: 1;
+  border-radius: var(--radius-button);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: background-color var(--transition-base), border-color var(--transition-base), color var(--transition-base);
+}
+
+.kodnest-btn:focus {
+  outline: none;
+}
+
+.kodnest-btn--primary {
+  background: var(--color-accent);
+  color: white;
+  border-color: var(--color-accent);
+}
+
+.kodnest-btn--primary:hover {
+  background: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+}
+
+.kodnest-btn--primary:focus {
+  border-color: var(--color-text);
+}
+
+/* Secondary Button */
+.kodnest-btn--secondary {
+  background: transparent;
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.kodnest-btn--secondary:hover {
+  border-color: var(--color-text);
+  color: var(--color-text);
+}
+
+.kodnest-btn--secondary:focus {
+  border-color: var(--color-accent);
+}
+
+/* Success Button (e.g. It Worked) */
+.kodnest-btn--success {
+  background: transparent;
+  color: var(--color-success);
+  border-color: var(--color-success);
+}
+
+.kodnest-btn--success:hover {
+  background: var(--color-success);
+  color: white;
+}
+
+/* Input */
+.kodnest-input {
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: 1.5;
+  color: var(--color-text);
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  transition: border-color var(--transition-fast);
+}
+
+.kodnest-input:focus {
+  outline: none;
+  border-color: var(--color-border-focus);
+}
+
+.kodnest-input::placeholder {
+  color: var(--color-text-muted);
+}
+
+/* Textarea */
+.kodnest-textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: var(--space-2) var(--space-3);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: var(--line-height-body);
+  color: var(--color-text);
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  resize: vertical;
+  transition: border-color var(--transition-fast);
+}
+
+.kodnest-textarea:focus {
+  outline: none;
+  border-color: var(--color-border-focus);
+}
+
+/* Card */
+.kodnest-card {
+  padding: var(--space-3);
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+/* Secondary Panel — Step explanation, prompt box, actions */
+.kodnest-panel__step {
+  font-size: var(--text-small);
+  color: var(--color-text-muted);
+  line-height: var(--line-height-body);
+  margin-bottom: var(--space-3);
+}
+
+.kodnest-panel__prompt {
+  position: relative;
+  margin-bottom: var(--space-3);
+}
+
+.kodnest-panel__prompt-box {
+  width: 100%;
+  min-height: 100px;
+  padding: var(--space-2) var(--space-3);
+  font-family: var(--font-body);
+  font-size: var(--text-caption);
+  line-height: 1.5;
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  resize: vertical;
+  transition: border-color var(--transition-fast);
+}
+
+.kodnest-panel__prompt-box:focus {
+  outline: none;
+  border-color: var(--color-border-focus);
+}
+
+.kodnest-panel__actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.kodnest-panel__actions .kodnest-btn {
+  width: 100%;
+}
+
+/* Error state */
+.kodnest-error {
+  padding: var(--space-3);
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.kodnest-error__title {
+  font-size: var(--text-body);
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 var(--space-1);
+}
+
+.kodnest-error__message {
+  font-size: var(--text-small);
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-2);
+  line-height: var(--line-height-body);
+}
+
+.kodnest-error__action {
+  font-size: var(--text-small);
+  font-weight: 500;
+  color: var(--color-accent);
+}
+
+/* Empty state */
+.kodnest-empty {
+  padding: var(--space-5);
+  text-align: center;
+}
+
+.kodnest-empty__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-subhead);
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 0 var(--space-2);
+}
+
+.kodnest-empty__text {
+  font-size: var(--text-body);
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-4);
+  max-width: var(--measure);
+  margin-left: auto;
+  margin-right: auto;
+  line-height: var(--line-height-body);
+}
+
+.kodnest-empty .kodnest-btn {
+  margin-top: var(--space-2);
+}

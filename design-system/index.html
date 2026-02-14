@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KodNest Premium Build System — Preview</title>
+  <link rel="stylesheet" href="kodnest.css">
+</head>
+<body>
+  <div class="kodnest-app">
+    <header class="kodnest-topbar">
+      <span class="kodnest-topbar__project">Project Alpha</span>
+      <span class="kodnest-topbar__progress">Step 2 / 5</span>
+      <span class="kodnest-topbar__status kodnest-topbar__status--in-progress">In Progress</span>
+    </header>
+
+    <section class="kodnest-context">
+      <h1 class="kodnest-context__headline">Define your requirements</h1>
+      <p class="kodnest-context__subtext">Describe what you want to build in clear terms.</p>
+    </section>
+
+    <main class="kodnest-main">
+      <div class="kodnest-workspace">
+        <div class="kodnest-card">
+          <h2>Primary workspace content</h2>
+          <p class="text-block">Clean cards, predictable components. This is where the main product interaction happens.</p>
+          <input type="text" class="kodnest-input" placeholder="Enter value..." style="max-width: 360px; margin-top: var(--space-2);">
+        </div>
+      </div>
+
+      <aside class="kodnest-panel">
+        <p class="kodnest-panel__step">Provide a concise prompt that describes your desired outcome. Be specific.</p>
+        <div class="kodnest-panel__prompt">
+          <textarea class="kodnest-panel__prompt-box" placeholder="Your prompt here..."></textarea>
+        </div>
+        <div class="kodnest-panel__actions">
+          <button class="kodnest-btn kodnest-btn--secondary">Copy</button>
+          <button class="kodnest-btn kodnest-btn--primary">Build in Lovable</button>
+          <button class="kodnest-btn kodnest-btn--success">It Worked</button>
+          <button class="kodnest-btn kodnest-btn--secondary">Error</button>
+          <button class="kodnest-btn kodnest-btn--secondary">Add Screenshot</button>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="kodnest-footer">
+      <div class="kodnest-footer__checklist">
+        <label class="kodnest-footer__item">
+          <span class="kodnest-footer__checkbox" role="checkbox" tabindex="0"></span>
+          UI Built
+        </label>
+        <label class="kodnest-footer__item">
+          <span class="kodnest-footer__checkbox" role="checkbox" tabindex="0"></span>
+          Logic Working
+        </label>
+        <label class="kodnest-footer__item">
+          <span class="kodnest-footer__checkbox" role="checkbox" tabindex="0"></span>
+          Test Passed
+        </label>
+        <label class="kodnest-footer__item">
+          <span class="kodnest-footer__checkbox" role="checkbox" tabindex="0"></span>
+          Deployed
+        </label>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
