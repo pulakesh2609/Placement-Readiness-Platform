@@ -74,14 +74,27 @@
 
 /* Primary Workspace — 70% */
 .kodnest-workspace {
-  flex: 0 0 70%;
+  flex: 1 1 70%;
   min-width: 0;
 }
 
 /* Secondary Panel — 30% */
 .kodnest-panel {
-  flex: 0 0 30%;
+  flex: 1 1 30%;
   min-width: 280px;
+}
+
+/* Responsive: stack on narrow viewports */
+@media (max-width: 900px) {
+  .kodnest-main {
+    flex-direction: column;
+  }
+
+  .kodnest-workspace,
+  .kodnest-panel {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
 }
 
 /* Proof Footer — Persistent bottom section */
